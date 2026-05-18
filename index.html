@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>📚 Library System</h1>
+
+    <div class="card">
+        <h2>Issue Book</h2>
+        <input type="number" id="studentId" placeholder="Student ID">
+        <input type="number" id="bookId" placeholder="Book ID">
+        <button onclick="issueBook()">Issue</button>
+    </div>
+
+    <div class="card">
+        <h2>Return Book</h2>
+        <input type="number" id="returnBookId" placeholder="Book ID">
+        <button onclick="returnBook()">Return</button>
+    </div>
+
+    <div class="card">
+        <h2>Records</h2>
+        <button onclick="loadRecords()">View Records</button>
+        <ul id="recordsList"></ul>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
